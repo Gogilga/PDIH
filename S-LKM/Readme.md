@@ -13,6 +13,8 @@ Aquí podemos ver la instalación:
 
 ![Imagen de la instalación](img/InstalarCosas.jpg)
 
+En mi caso podemos ver que ya estaba todo lo necesario instalado, por lo que el sistema no hace ningún cambio en los archivos.
+
 El código que he utilizado para el documento `hello.c` es el siguiente:
 
 ~~~
@@ -56,7 +58,16 @@ module_init(helloBBB_init);
 module_exit(helloBBB_exit);
 ~~~
 
-Ahora compilamos el archivo fuente `hello.c` para obentener un archivo objeto de kernel del tipo `hello.ko`.
+Ahora compilamos el archivo fuente `hello.c` para obentener un archivo objeto de kernel del tipo `hello.ko`. Para ello usamos un makefile facilitado por el profesor que incluye lo siguiente:
+
+~~~
+obj-m+=hello.o
+all:
+   make -C /lib/modules/$(shell uname -r)/build/ M=$(PWD) modules
+clean:
+   make -C /lib/modules/$(shell uname -r)/build/ M=$(PWD)
+clean
+~~~
 
 ![Imagen de la compilación](img/Make.jpg)
 
