@@ -1,5 +1,12 @@
-# S-LKM ![Logo](img/logo-ugr-horizontal.png)
+# S-LKM <img id="logo" src="img/logo-ugr-horizontal.png" alt="drawing" width="200"/>
 
+<style>
+#logo{
+    float: right;
+    left: 0;
+}
+</style>
+<!--![Logo](img/logo-ugr-horizontal.png =100x20)-->
 Para la realización de esta actividad he usado una máquina virtual con el sistema operativo ``Zorin OS`` instalado.
 
 Primero tenemos que tener preparado el código kernel para compilar un LKM, y para ello instalamos las cabeceras de Linux:
