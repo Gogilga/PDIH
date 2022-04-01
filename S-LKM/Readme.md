@@ -7,7 +7,6 @@ sudo apt-cache search linux-headers-$(uname -r)
 sudo apt-get install linux-headers-$(uname -r)
 ~~~
 
-- [x] #739
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
-- [ ] \(Optional) Abre una propuesta de seguimiento
+![Esta es una imagen](img/InstalarCosas.jpg)
+
+<img align="center" src="img/InstalarCosas.jpg" alt="Imagen de la instalación"/>
