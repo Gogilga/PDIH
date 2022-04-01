@@ -84,6 +84,6 @@ A continuación solicitamos información sobre el módulo con `modinfo`:
 
 ![Imagen modinfo](img/modinfo.jpg)
 
-Finalmente, lo eliminamos del kernel ``rmmod`` y en el revisamos la salida de la función *printk()* en el registro de log del kernel, y podremos ver al final dos mensajes, uno al haberlo añadido y el último al eliminarlo:
+Finalmente, lo eliminamos del kernel ``rmmod`` y en el revisamos la salida de la función *printk()* en el registro de log del kernel. En el podremos observar al final dos mensajes, uno al haber añadido el LKM y el último al eliminarlo:
 
 ![Imagen rmood](img/RegistroSistema.jpg)
