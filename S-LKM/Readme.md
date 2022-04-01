@@ -1,12 +1,5 @@
-# S-LKM <img id="logo" src="img/logo-ugr-horizontal.png" alt="drawing" width="200"/>
+# S-LKM 
 
-<style>
-#logo{
-    float: right;
-    left: 0;
-}
-</style>
-<!--![Logo](img/logo-ugr-horizontal.png =100x20)-->
 Para la realización de esta actividad he usado una máquina virtual con el sistema operativo ``Zorin OS`` instalado.
 
 Primero tenemos que tener preparado el código kernel para compilar un LKM, y para ello instalamos las cabeceras de Linux:
@@ -79,3 +72,9 @@ Posteriormente añadimos el nuevo módulo en el kernel del sistema operativo.
 A continuación solicitamos información sobre el módulo con `modinfo`:
 
 ![Imagen modinfo](img/modinfo.jpg)
+
+Finalmente, lo eliminamos del kernel ``rmmod`` y revisaremos la salida de la función *printk()* en el registro de log del kernel:
+
+![Imagen rmood](img/RegistroSistema.jpg)
+
+Al final de la imagen anterior podemos ver como se han mostrado los dos mensajes, uno al haberlo añadido y el último al eliminarlo.
