@@ -76,7 +76,7 @@ clean
 Posteriormente añadimos el nuevo módulo en el kernel del sistema operativo.
 
 - Con ``sudo insmod hello.ko`` lo añadimos.
-- Con `lsmod` mostramos los diferentes módulos del kernel y podemos ver que está *hello*, que es el que hemos añadido.
+- Con `lsmod` mostramos los diferentes módulos del kernel y podemos ver que está *hello*, que es el que hemos creado.
 
 ![Imagen añadiendo](img/lsmod.jpg)
 
