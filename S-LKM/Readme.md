@@ -62,9 +62,13 @@ Ahora compilamos el archivo fuente `hello.c` para obentener un archivo objeto de
 
 ![Imagen mostrando el archivo](img/ls.jpg)
 
-Poseriormente añadimos el nuevo módulo en el kernel del sistema operativo.
+Posteriormente añadimos el nuevo módulo en el kernel del sistema operativo.
 
 - Con ``sudo insmod hello.ko`` lo añadimos.
 - Con `lsmod` mostramos los diferentes módulos del kernel y podemos ver que está *hello*, que es el que hemos añadido.
 
 ![Imagen añadiendo](img/lsmod.jpg)
+
+A continuación solicitamos información sobre el módulo con `modinfo`:
+
+![Imagen modinfo](img/modinfo.jpg)
