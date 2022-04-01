@@ -55,3 +55,9 @@ static void __exit helloBBB_exit(void){
 module_init(helloBBB_init);
 module_exit(helloBBB_exit);
 ~~~
+
+Ahora compilamos el archivo fuente `hello.c` para obentener un archivo objeto de kernel del tipo `hello.ko`.
+
+![Imagen de la compilación](img/Make.jpg)
+
+![Imagen mostrando el archivo](img/ls.jpg)
