@@ -61,4 +61,4 @@ Ahora compilamos el archivo fuente `hello.c` para obentener un archivo objeto de
 ![Imagen de la compilación](img/Make.jpg)
 
 ![Imagen mostrando el archivo](img/ls.jpg)
-<img align="center" src="P1/img/ls.jpg" alt="Imagen del análisis competitivo"/>
+<img align="center" src="img/ls.jpg" alt="Imagen del análisis competitivo"/>
