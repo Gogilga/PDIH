@@ -1,4 +1,4 @@
-# S-LKM
+<center> <h1>S-LKM</h1> </center>
 
 Para la realización de esta actividad he usado una máquina virtual con el sistema operativo ``Zorin OS`` instalado.
 
