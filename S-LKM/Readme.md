@@ -1,4 +1,4 @@
-<center> <h1>S-LKM</h1> </center>
+# S-LKM ![Logo](img/logo-ugr-horizontal.png)
 
 Para la realización de esta actividad he usado una máquina virtual con el sistema operativo ``Zorin OS`` instalado.
 
