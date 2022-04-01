@@ -61,4 +61,10 @@ Ahora compilamos el archivo fuente `hello.c` para obentener un archivo objeto de
 ![Imagen de la compilación](img/Make.jpg)
 
 ![Imagen mostrando el archivo](img/ls.jpg)
-<img align="center" src="img/ls.jpg" alt="Imagen del análisis competitivo"/>
+
+Poseriormente añadimos el nuevo módulo en el kernel del sistema operativo.
+
+- Con ``sudo insmod hello.ko`` lo añadimos.
+- Con `lsmod` mostramos los diferentes módulos del kernel y podemos ver que está *hello*, que es el que hemos añadido.
+
+![Imagen añadiendo](img/lsmod.jpg)
