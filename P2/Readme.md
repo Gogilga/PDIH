@@ -72,3 +72,32 @@ Para el movimiento de la bola, hay varias cosas a tener en cuenta:
     - Si la bolita llega a tocar un lateral, la pelota se coloca en el centro y se le suma un punto al jugador que lo ha anotado.
 
 Por último, dentro del bucle comprobamos si alguno de los dos jugadores ha obtenido la máxima puntuación. Si es así, se termina la partida y se muestra por pantalla el resultado y el número del jugador ganador. Si ningún jugador ha llegado a la puntuación máxima, se sigue la partida.
+
+### 2.5. Funcionamiento del programa
+---
+
+Mostramos, por último, el funcionamiento del programa mediante capturas de pantalla realizadas en la ejecución de la partida.
+
+Pantalla de inicio:
+
+![Pantalla de inicio](img/PantallaInicio.png)
+
+Pantalla de la partida:
+
+![Pantalla de la partida](img/Partida.png)
+
+Pantalla de pausa: 
+
+![Pantalla de pausa](img/Pausa.png)
+
+Pantalla de fin (ganador jugador 2): 
+
+![Pantalla de fin (ganador jugador 2)](img/FinJugador2.png)
+
+Pantalla de fin (ganador jugador 1):
+
+![Pantalla de fin (ganador jugador 1)](img/FinJugador1.png)
+
+Pantalla de fin (empate): 
+
+![Pantalla de fin (empate)](img/FinEmpate.png)
