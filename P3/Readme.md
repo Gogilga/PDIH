@@ -58,3 +58,55 @@ Imágenes demostrativas del funcionamiento:
 ![Video circuito 1](img/Video1.gif)
 
 ## 2. Parpadeo led con pulsador
+
+Partir del programa de parpadeo de LEDs anterior y ampliarlo con las modificaciones necesarias para que se encienda el LED rojo solo cuando se pulse un interruptor conectado a la entrada 7, y en ese momento se apaguen los LEDs amarillo y verde.
+
+Componentes eléctricos utilizados: 
+- Un LED rojo
+- Un LED amarillo
+- Un LED verde
+- Cuatro resistencias de 220Ω
+- Una placa Arduino Uno R3
+- Un pulsador
+
+Esquema de conexiones eléctricas:
+
+![Circuito 2](img/Circuito2.png)
+
+![Esquema circuito 2](img/EsquemaCircuito2.png)
+
+Código fuente:
+
+```
+void setup()
+{
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(7, INPUT);
+}
+
+void loop()
+{
+  if (digitalRead(7) == HIGH){
+    digitalWrite(11, LOW);
+    digitalWrite(12, LOW);
+    digitalWrite(13, HIGH);
+  }
+  else{
+    digitalWrite(11, HIGH);
+    digitalWrite(12, HIGH);
+    digitalWrite(13, LOW);
+  }
+}
+```
+
+Al igual que antes, los pines 11, 12 y 13 son de salida y corresponden con los LEDs en el mismo orden que en el primer circuito. Por otro lado, en este circuito hemos añadido el pin 7, en este caso de entrada, para el pulsador que hará el cambio de bombillas encendidas.
+
+Imágenes demostrativas del funcionamiento: 
+
+![Muestra circuito 2](img/Muestra2.1.jpg)
+
+![Muestra circuito 2](img/Muestra2.2.jpg)
+
+![Video circuito 2](img/Video2.gif)
