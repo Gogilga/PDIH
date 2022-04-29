@@ -49,4 +49,12 @@ void loop()
 }
 ```
 
+Los pines 11, 12 y 13 son de salida y hacen referencia a los tres LEDs verde, amarillo y rojo, respectivamente.
+
+Imágenes demostrativas del funcionamiento: 
+
+![Muestra circuito 1](img/Muestra1.jpg)
+
+![Video circuito 1](img/Video1.gif)
+
 ## 2. Parpadeo led con pulsador
