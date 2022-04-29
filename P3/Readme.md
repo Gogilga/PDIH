@@ -175,3 +175,50 @@ Imágenes demostrativas del funcionamiento:
 ![Muestra circuito 3](img/Muestra3.jpg)
 
 ![Video circuito 3](img/Video3.gif)
+
+## 4. Alarma por detección de presencia.
+
+Componentes eléctricos utilizados: 
+- Un LED rojo
+- Cuatro resistencias de 220Ω
+- Un sensor PIR
+- Un buzzer
+- Una placa Arduino Uno R3
+
+Esquema de conexiones eléctricas:
+
+![Circuito 4](img/Circuito4.png)
+
+![Esquema circuito 4](img/EsquemaCircuito4.png)
+
+Código fuente:
+
+```
+int pir_pin = 2;
+int led_pin = 3;
+int val= 0;
+
+void setup() {
+  pinMode(pir_pin, INPUT);
+  pinMode(led_pin, OUTPUT);
+}
+void loop() {
+  val = digitalRead(pir_pin);
+  if(val == HIGH)
+  {
+    digitalWrite(led_pin, HIGH);
+    delay(100);
+  }
+  else{
+    digitalWrite(led_pin, LOW);
+    delay(100);
+  }
+}
+```
+
+Utilizamos variables globales en este último circuito para definir los pines de los componentes que tenemos. El pin 2 lo utilizamos para el sensor PIR, y será de entrada. El pin 3 corresponde con el LED, que como ya hemos dicho anteriormente es de salida. Por último, el buzzer estará en el pin 4, y también será de salida porque emitirá un zumbido cuando detecte presencia con el sensor PIR.
+
+Imágenes demostrativas del funcionamiento: 
+
+![Muestra circuito 4](img/Muestra4.jpg)
+
