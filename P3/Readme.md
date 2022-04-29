@@ -110,3 +110,68 @@ Imágenes demostrativas del funcionamiento:
 ![Muestra circuito 2](img/Muestra2.2.jpg)
 
 ![Video circuito 2](img/Video2.gif)
+
+## 3. Coche fantástico
+
+Secuencia de LEDs, encendiendo y apagando 4 LEDs secuencialmente, de forma similar a las lucecitas de “_El coche fantástico_”.
+
+Componentes eléctricos utilizados: 
+- Cuatro LEDs rojos
+- Cuatro resistencias de 220Ω
+- Una placa Arduino Uno R3
+
+Esquema de conexiones eléctricas:
+
+![Circuito 3](img/Circuito3.png)
+
+![Esquema circuito 3](img/EsquemaCircuito3.png)
+
+Código fuente:
+
+```
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  digitalWrite(11, LOW);
+  delay(300); // Wait for 300 millisecond(s)
+  
+  digitalWrite(12, LOW);
+  delay(300); // Wait for 300 millisecond(s)
+  
+  digitalWrite(12, HIGH);
+  digitalWrite(10, LOW);
+  delay(300); // Wait for 300 millisecond(s)
+  digitalWrite(11, HIGH);
+  digitalWrite(13, LOW);
+  delay(300); // Wait for 300 millisecond(s)
+  digitalWrite(10, HIGH);
+  digitalWrite(12, LOW);
+  delay(300); // Wait for 300 millisecond(s)
+  
+  digitalWrite(11, LOW);
+  delay(300); // Wait for 300 millisecond(s)
+  
+  digitalWrite(11, HIGH);
+  digitalWrite(13, LOW);
+  delay(300); // Wait for 300 millisecond(s)
+  digitalWrite(12, HIGH);
+  digitalWrite(10, LOW);
+  delay(300); // Wait for 300 millisecond(s)
+}
+```
+
+En esta ocasión tenemos 4 LEDs rojos conectados a los pines 10, 11, 12 y 13, todos de salida.
+
+Imágenes demostrativas del funcionamiento: 
+
+![Muestra circuito 3](img/Muestra3.jpg)
+
+![Video circuito 3](img/Video3.gif)
