@@ -222,3 +222,72 @@ Imágenes demostrativas del funcionamiento:
 
 ![Muestra circuito 4](img/Muestra4.jpg)
 
+## 5. Alarma por detección de presencia  mediante sensor de distancia.
+
+Tras varios intentos de conseguir hacer funcionar el circuito anterior con el sensor PIR y no obtener resultados satisfactorios, decidimos implementar un circuito extra con la utilización de un sensor de distancia.
+
+Componentes eléctricos utilizados: 
+- Un LED amarillo
+- Un sensor de distancia
+- Una placa Arduino Uno R3
+
+Esquema de conexiones eléctricas:
+
+![Circuito 5](img/Circuito5.png)
+
+![Esquema circuito 5](img/EsquemaCircuito5.png)
+
+Código fuente:
+
+```
+const int Trigger = 2;   //Pin digital 2 para el Trigger del sensor
+const int Echo = 3;   //Pin digital 3 para el Echo del sensor
+const int led= 13;
+
+void setup() {
+  Serial.begin(9600);//iniciailzamos la comunicación
+  pinMode(Trigger, OUTPUT); //pin como salida
+  pinMode(Echo, INPUT);  //pin como entrada
+  pinMode(led, OUTPUT);
+  digitalWrite(Trigger, LOW);//Inicializamos el pin con 0
+}
+
+void loop()
+{
+
+  long t; //timepo que demora en llegar el eco
+  long d; //distancia en centimetros
+
+  digitalWrite(Trigger, HIGH);
+  delayMicroseconds(10);          //Enviamos un pulso de 10us
+  digitalWrite(Trigger, LOW);
+  
+  t = pulseIn(Echo, HIGH); //obtenemos el ancho del pulso
+  d = t/59;             //escalamos el tiempo a una distancia en cm
+  
+  Serial.print("Distancia: ");
+  Serial.print(d);      //Enviamos serialmente el valor de la distancia
+  Serial.print("cm");
+  Serial.println();
+
+  if(d <= 10){
+    digitalWrite(led, HIGH);
+  }
+  else{
+    digitalWrite(led, LOW);
+  }
+  
+  delay(100);          //Hacemos una pausa de 100ms
+  
+}
+```
+
+Utilizamos variables globales en este último circuito para definir los pines de los componentes que tenemos. El pin 2 lo utilizamos para el Trigger del sensor, y será de salida. El pin 3 corresponde con el Echo, que es de entrada. Por último, el LED estará en el pin 13, y también será de salida.
+
+Imágenes demostrativas del funcionamiento: 
+
+![Muestra circuito 5](img/Muestra5.1.jpg)
+
+![Muestra circuito 5](img/Muestra5.2.jpg)
+
+![Video circuito 5](img/Video5.gif)
