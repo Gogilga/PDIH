@@ -1,0 +1,126 @@
+%!PS
+
+% Rectángulo de la tarjeta
+% 200 500 translate
+% draw rectangles
+% newpath -54 2 54 36 rectstroke
+% showpage
+
+newpath % Start a new path
+0.9 setgray
+150 500 moveto
+260 0 rlineto
+0 120 rlineto
+-260 0 rlineto
+closepath
+fill
+2 setlinewidth
+stroke 
+
+% Logo tarjeta
+newpath
+0 setgray % poner color de lápiz a negro
+0.1 setlinewidth % poner grosor de línea (muy fina)
+% x y R angI angF % dar coordenada, radio y ángulos
+230 560 30 0 360 arc
+1 setlinewidth
+stroke
+
+newpath % Start a new path
+230 560 moveto
+0 50 rlineto
+50 0 rlineto
+-0 0 rlineto
+closepath
+1 setlinewidth
+stroke 
+
+newpath % Start a new path
+180 510 moveto
+50 0 rlineto
+0 50 rlineto
+-0 0 rlineto
+closepath
+1 setlinewidth
+stroke 
+
+% texto 1
+/Arial findfont                 % fuente del texto
+9 scalefont                    % tamano del texto
+setfont                         % aplicar la fuente del texto
+0.1 setgray                     % color de texto: negro
+newpath
+320 580 moveto                  % posicion inicial
+(Lara Galvez) show  % texto que se muestra
+closepath
+stroke
+
+% texto 2
+/Arial findfont                 % fuente del texto
+7 scalefont                     % tamano del texto
+setfont                         % aplicar la fuente del texto
+0.3 setgray                     % color de texto: negro
+newpath
+320 570 moveto                  % posicion inicial
+(Productora ejecutiva) show  % texto que se muestra
+closepath
+stroke
+
+% Dirección Avenida Hispanidade, 13, 36203, Vigo Pontevedra, Pontevedra
+
+% texto 3
+/Arial findfont                 % fuente del texto
+7 scalefont                     % tamano del texto
+setfont                         % aplicar la fuente del texto
+0.3 setgray                     % color de texto: negro
+newpath
+320 550 moveto                  % posicion inicial
+(Avenida Hispanidade) show  % texto que se muestra
+closepath
+stroke
+
+% texto 4
+/Arial findfont                 % fuente del texto
+7 scalefont                     % tamano del texto
+setfont                         % aplicar la fuente del texto
+0.3 setgray                     % color de texto: negro
+newpath
+320 540 moveto                  % posicion inicial
+(Local 13) show  % texto que se muestra
+closepath
+stroke
+
+% texto 5
+/Arial findfont                 % fuente del texto
+7 scalefont                     % tamano del texto
+setfont                         % aplicar la fuente del texto
+0.3 setgray                     % color de texto: negro
+newpath
+320 530 moveto                  % posicion inicial
+(36203 Vigo, Pontevedra) show  % texto que se muestra
+closepath
+stroke
+
+% texto 6
+/Arial findfont                 % fuente del texto
+7 scalefont                     % tamano del texto
+setfont                         % aplicar la fuente del texto
+0.3 setgray                     % color de texto: negro
+newpath
+320 520 moveto                  % posicion inicial
+(986 04 91 57) show  % texto que se muestra
+closepath
+stroke
+
+% texto 7
+/Arial findfont                 % fuente del texto
+7 scalefont                     % tamano del texto
+setfont                         % aplicar la fuente del texto
+0.3 setgray                     % color de texto: negro
+newpath
+320 510 moveto                  % posicion inicial
+(laragalvez@gmail.com) show  % texto que se muestra
+closepath
+stroke
+
+showpage

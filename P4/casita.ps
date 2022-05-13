@@ -1,0 +1,85 @@
+%!PS
+
+% relleno de la casa
+newpath
+0.7 setgray             % color intermedio entre negro y blanco
+200 350 moveto          % posicion inicial
+300 350 lineto          % linea de (200,350) hasta (300,350)
+300 450 lineto          % linea de (300,350) hasta (300,450)
+200 450 lineto          % linea de (300,450) hasta (200,450)
+closepath
+fill
+stroke
+
+% relleno del tejado
+newpath
+0.7 setgray             % color intermedio entre negro y blanco
+190 450 moveto          % posicion inicial
+250 500 lineto          % linea de (190,450) hasta (250,500)
+310 450 lineto          % linea de (250,500) hasta (310,450)
+closepath
+fill
+stroke
+
+% lineas del perimetro de la casa
+newpath
+0 0.5 1 setrgbcolor     % color RGB
+200 350 moveto          % posicion inicial
+300 350 lineto          % linea de (200,350) hasta (300,350)
+300 450 lineto          % linea de (300,350) hasta (300,450)
+200 450 lineto          % linea de (300,450) hasta (200,450)
+closepath
+stroke
+
+% lineas del perimetro del tejado
+newpath
+0 0.5 1 setrgbcolor     % color RGB
+190 450 moveto          % posicion inicial
+250 500 lineto          % linea de (190,450) hasta (250,500)
+310 450 lineto          % linea de (250,500) hasta (310,450)
+closepath
+stroke
+
+% lineas de la puerta de la casa
+newpath
+240 350 moveto          % posicion inicial
+240 390 lineto          % linea de (240,350) hasta (240,390)
+260 390 lineto          % linea de (240,390) hasta (260,390)
+260 350 lineto          % linea de (260,390) hasta (260,350)
+closepath
+stroke
+
+% lineas de la ventana1 de la casa
+newpath
+215 410 moveto          % posicion inicial
+215 430 lineto          % linea de (215,410) hasta (255,430)
+240 430 lineto          % linea de (255,430) hasta (240,430)
+240 410 lineto          % linea de (240,430) hasta (240,410)
+closepath
+stroke
+
+% lineas de la ventana2 de la casa
+newpath
+260 410 moveto          % posicion inicial
+260 430 lineto          % linea de (260,410) hasta (260,430)
+285 430 lineto          % linea de (260,430) hasta (285,430)
+285 410 lineto          % linea de (285,430) hasta (285,410)
+closepath
+stroke
+
+% texto de la casa "mi casita"
+/Arial findfont         % fuente del texto
+10 scalefont            % tamano del texto
+setfont                 % aplicar la fuente del texto
+0 setgray               % color de texto: negro
+
+newpath
+150 370 moveto          % posicion inicial
+90 rotate               % rotacion de 90 grados
+(mi casita) show        % texto que se muestra
+closepath
+stroke
+
+
+showpage
+%%EOF

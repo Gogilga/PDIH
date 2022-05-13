@@ -1,0 +1,72 @@
+%!PS
+
+% circulo1 relleno del corazon
+newpath
+1 0 0 setrgbcolor
+240 440 45 0 360 arc
+fill
+stroke
+
+% circulo2 relleno del corazon
+newpath
+1 0 0 setrgbcolor
+320 440 45 0 360 arc
+fill
+stroke
+
+% triangulo relleno del corazon
+newpath
+1 0 0 setrgbcolor
+199 420 moveto          % posicion inicial
+280 320 lineto
+361 420 lineto
+closepath
+fill
+stroke
+
+% texto 1
+/Arial findfont                 % fuente del texto
+15 scalefont                    % tamano del texto
+setfont                         % aplicar la fuente del texto
+0.8 setgray                     % color de texto: negro
+newpath
+350 300 moveto                  % posicion inicial
+(Que bonitos ojos tienes) show  % texto que se muestra
+closepath
+stroke
+
+% texto 2
+/Arial findfont                 % fuente del texto
+15 scalefont                    % tamano del texto
+setfont                         % aplicar la fuente del texto
+0.6 setgray                     % color de texto: negro
+newpath
+350 280 moveto                  % posicion inicial
+(tan redondos como el sol) show  % texto que se muestra
+closepath
+stroke
+
+% texto 3
+/Arial findfont                 % fuente del texto
+15 scalefont                    % tamano del texto
+setfont                         % aplicar la fuente del texto
+0.4 setgray                     % color de texto: negro
+newpath
+350 260 moveto                  % posicion inicial
+(se parecen a los ceros) show  % texto que se muestra
+closepath
+stroke
+
+% texto 4
+/Arial findfont                 % fuente del texto
+15 scalefont                    % tamano del texto
+setfont                         % aplicar la fuente del texto
+0.2 setgray                     % color de texto: negro
+newpath
+350 240 moveto                  % posicion inicial
+(que me pone el profesor) show  % texto que se muestra
+closepath
+stroke
+
+showpage
+%%EOF
