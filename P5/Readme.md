@@ -102,6 +102,7 @@ Para este apartado hemos escogido el fichero de audio oveja.wav.
 nuevo <- readWave('oveja.wav')
 str(nuevo)
 nuevoconeco <- echo(nuevo, f=22050, amp=c(0.8,0.4,0.2), delay=c(1,2,3), output="Wave")
+nuevoconeco@left <- 10000 * nuevoconeco@left
 alreves <- revw(nuevoconeco, output="Wave")
 writeWave(alreves, file.path("alreves.wav"))
 ```
