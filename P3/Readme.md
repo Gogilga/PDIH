@@ -24,7 +24,7 @@ Esquema de conexiones eléctricas:
 
 Código fuente:
 
-```
+```C++
 void setup()
 {
   pinMode(11, OUTPUT);
@@ -77,7 +77,7 @@ Esquema de conexiones eléctricas:
 
 Código fuente:
 
-```
+```C++
 void setup()
 {
   pinMode(11, OUTPUT);
@@ -128,7 +128,7 @@ Esquema de conexiones eléctricas:
 
 Código fuente:
 
-```
+```C++
 void setup()
 {
   pinMode(13, OUTPUT);
@@ -193,7 +193,7 @@ Esquema de conexiones eléctricas:
 
 Código fuente:
 
-```
+```C++
 int pir_pin = 2;
 int led_pin = 3;
 int val= 0;
@@ -239,7 +239,7 @@ Esquema de conexiones eléctricas:
 
 Código fuente:
 
-```
+```C++
 const int Trigger = 2;   //Pin digital 2 para el Trigger del sensor
 const int Echo = 3;   //Pin digital 3 para el Echo del sensor
 const int led= 13;

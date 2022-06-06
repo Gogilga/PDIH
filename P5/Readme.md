@@ -9,7 +9,7 @@ Estudiantes:
 
 ### Santiago
 
-```
+```R
 nombre <- readWave('NombreSantiago.wav')
 nombre
 apellidos <- readWave('ApellidosSantiago.wav')
@@ -21,7 +21,7 @@ apellidos
 
 ### Victoria
 
-```
+```R
 nombre <- readWave('NombreVictoria.wav')
 nombre
 apellidos <- readWave('ApellidosVictoria.wav')
@@ -87,7 +87,7 @@ La primera onda es la del nombre, mientras que la segunda es la de los apellidos
 
 ## 7. Almacenar la señal obtenida como un fichero WAV denominado “mezcla.wav”.
 
-```
+```R
 # se guarda la señal en el fichero mezcla.wav
 writeWave(filtrofrec, file.path("mezcla.wav"))
 ```
@@ -96,7 +96,7 @@ writeWave(filtrofrec, file.path("mezcla.wav"))
 
 Para este apartado hemos escogido el fichero de audio oveja.wav.
 
-```
+```R
 # aplicar eco a un nuevo sonido y darle la vuelta
 # guardar la señal en el fichero alreves.wav
 nuevo <- readWave('oveja.wav')
@@ -112,7 +112,7 @@ writeWave(alreves, file.path("alreves.wav"))
 Para la implementación del código, hemos utilizado la función readWave para la lectura de los archivos de sonido. La función str nos permite visualizar la información de las cabeceras. Con la función listen podemos escuchar los archivos de sonido. Seguidamente, con la función plot podemos dibujar las ondas de sonido de los ficheros. Gracias a pastew unimos los audios deseados. Con bwfilter hemos podido aplicar un filtro de frecuencia sobre nuestra mezcla de sonidos.
 Para el último apartado hemos utilizado la función echo para aplicarle eco al audio, la función revw para darle la vuelta, y la función writeWave para almacenar el sonido en un fichero de tipo Wave.
 
-```
+```R
 library(tuneR)
 library(seewave)
 library(soundgen)
